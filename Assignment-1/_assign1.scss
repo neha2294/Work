@@ -1,0 +1,108 @@
+$width: 960px;
+$margin: auto;
+$bg: black;
+.wrapper {
+	width: $width ;
+	margin: $margin ;
+}
+header {
+    @extend .wrapper;
+	height: 50px;
+	background-color: $bg;
+	border-bottom: 4px solid skyblue;
+}
+footer {
+    @extend .wrapper;
+  background-color: $bg;
+  height: 40px;
+}
+
+.main {
+	height: 50px;
+	width: 50%;
+	float: right;
+}
+.im {
+	margin-left: 50px;
+	float: left;
+	margin-top: 10px;
+}
+.name {
+	color: white;
+	margin-left: 20px;
+	float: left;
+	margin-top: 15px;
+}
+.field1 {
+	background-image: url("img.png");
+	background-repeat: no-repeat;
+	float: right;
+	margin-top: 10px;
+	margin-right: 55px;
+}
+.back {
+	display: inline-block;
+	height: 28px;
+	width: 32px;
+	&:hover {
+		background-color: grey;
+		opacity: 0.5;
+	}
+}
+
+.sec2 {
+	width: 850px;
+	margin: $margin;
+	&:after {
+		clear: both;
+		content: "";
+		display: block;
+	}
+}
+.div1 {
+	width: 200px;
+	float: left;
+}
+.pic {
+	height: 150px;
+	width: 150px;
+	background-color: grey;
+}
+p {
+	color: green;
+	font-size: 10px;
+	margin-left: 110px;
+}
+.one {
+	width: 100px;
+}
+.div2 {
+	float: left;
+	margin-bottom: 20px;
+	margin-left: 50px;
+}
+.acc {
+	float: right;
+	margin-right: 10px;
+}
+.noimg {
+	height: 100px;
+	border: 1px solid grey;
+	width: 200px;
+	margin-left: 110px;
+}
+.confg {
+	background-color: salmon;
+	height: 40px;
+	float: left;
+	margin-bottom: 20px;
+	width: 850px;
+}
+.two {
+	margin-left: 700px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+.four {
+	margin-right: 20px;
+}
