@@ -1,6 +1,12 @@
+body {
+	padding:0;
+	margin:0;
+
+}
+
 .wrapper{
-	width:960px;
-	margin:auto;
+	width:800px;
+	margin:0 auto;
 }
 
 header{
@@ -18,7 +24,7 @@ header{
 .im{
 	margin-left: 50px;
 	float: left;
-	margin-top:10px;
+	margin-top:5px;
 }
 
 .name{
@@ -29,12 +35,55 @@ header{
 }
 
 .field1{
-	background-image:url("img.png");
-	background-repeat:no-repeat;
 	float:right;
-	margin-top:10px;
-	margin-right:55px;
+	border-left:1px solid gray;
+	height:50px;
+	opacity:0.2px;
+	margin-bottom:50px;
 }
+
+#navlist {
+  margin-bottom:10px; 
+}
+
+#navlist li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+   
+   
+}
+
+#navlist li, #navlist a {
+    height: 25px;
+    display: block;
+	width:25px;
+	 float:left;
+	 padding:8px;
+}
+
+#home {
+  
+    
+    background: url('i1.png');
+	background-repeat:no-repeat;
+	border-radius:2px;
+}
+
+#prev {
+    
+   
+    background: url('i2.png');
+	background-repeat:no-repeat;
+}
+
+#next {
+   
+
+    background: url('i3.png');
+	background-repeat:no-repeat;
+}
+
 
 .back{
 	display: inline-block;
@@ -48,7 +97,6 @@ header{
 }	
 
 .sec2{
-	width:850px;
 	margin:auto;
 }
 
@@ -97,26 +145,45 @@ margin-left:110px;
 .noimg{
 	height:100px;
 	border:1px solid grey;
-	width:200px;
-	margin-left:110px;
+	width: 180px;
+    margin-left: 130px;
+	text-align:center;
+	
+	
 }
 
 .confg{
-	background-color:salmon;
-	height:40px;
-	float:left;
-	margin-bottom:20px;
-	width:850px;
+	background-color: lightgray;
+    clear: left;
+    height: 40px;
+    margin-bottom: 20px;
+    position: relative;
+	
 }
 
 .two{
-	margin-left:700px;
-	margin-bottom:10px;
-	margin-top: 10px;
+	
+	margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left:700px;
+    position: absolute;
+    right: 85px;
+    padding: 3px;
+	border-radius: 2px;
 }
 
 .four{
 	margin-right: 20px;
+    right: 0;
+    position: absolute;
+    margin-top: 9px;
+    padding: 3px;
+	border-radius: 2px;
+}
+
+.six{
+	width:115px;
+	margin-left: 15px;
 }
 
 footer{
