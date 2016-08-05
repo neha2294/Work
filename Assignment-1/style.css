@@ -1,0 +1,193 @@
+body {
+	padding:0;
+	margin:0;
+
+}
+
+.wrapper{
+	width:800px;
+	margin:0 auto;
+}
+
+header{
+	height:50px;
+	background-color:black;
+	border-bottom:4px solid skyblue;
+}
+
+.main{
+	height:50px;
+	width:50%;
+	float:right;
+}
+
+.im{
+	margin-left: 50px;
+	float: left;
+	margin-top:5px;
+}
+
+.name{
+	color:white;
+	margin-left: 20px;
+	float: left;
+	margin-top:15px;
+}
+
+.field1{
+	float:right;
+	border-left:1px solid gray;
+	height:50px;
+	opacity:0.2px;
+	margin-bottom:50px;
+}
+
+#navlist {
+  margin-bottom:10px; 
+}
+
+#navlist li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+   
+   
+}
+
+#navlist li, #navlist a {
+    height: 25px;
+    display: block;
+	width:25px;
+	 float:left;
+	 padding:8px;
+}
+
+#home {
+  
+    
+    background: url('i1.png');
+	background-repeat:no-repeat;
+	border-radius:2px;
+}
+
+#prev {
+    
+   
+    background: url('i2.png');
+	background-repeat:no-repeat;
+}
+
+#next {
+   
+
+    background: url('i3.png');
+	background-repeat:no-repeat;
+}
+
+
+.back{
+	display: inline-block;
+	height:28px;
+	width:32px;
+}
+	
+.back:hover{
+	background-color: grey;
+	opacity: 0.5;
+}	
+
+.sec2{
+	margin:auto;
+}
+
+.sec2:after{
+	clear:both;
+	content: "";
+	display:block;
+}
+
+.div1{
+	width:200px;
+	float:left;
+}
+	
+.pic{
+	height: 150px;
+	width: 150px;
+	background-color:grey;
+}
+	
+p{
+color:green;
+font-size:10px;
+margin-left:110px;
+}
+
+.one{
+	width:100px;
+	}
+
+.div2{
+	float:left;
+	margin-bottom:20px;
+	margin-left:50px;
+}
+
+.acc{
+	float:right;
+	margin-right:10px;
+}
+
+.acc1{
+	margin-left:38px;
+}
+
+.noimg{
+	height:100px;
+	border:1px solid grey;
+	width: 180px;
+    margin-left: 130px;
+	text-align:center;
+	
+	
+}
+
+.confg{
+	background-color: lightgray;
+    clear: left;
+    height: 40px;
+    margin-bottom: 20px;
+    position: relative;
+	
+}
+
+.two{
+	
+	margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left:700px;
+    position: absolute;
+    right: 85px;
+    padding: 3px;
+	border-radius: 2px;
+}
+
+.four{
+	margin-right: 20px;
+    right: 0;
+    position: absolute;
+    margin-top: 9px;
+    padding: 3px;
+	border-radius: 2px;
+}
+
+.six{
+	width:115px;
+	margin-left: 15px;
+}
+
+footer{
+	background-color:black;
+	height:40px;
+}
+	
