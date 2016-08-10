@@ -34,6 +34,12 @@ header{
 	margin-top:15px;
 }
 
+#man{
+	color:red;
+}
+
+
+
 .field1{
 	float:right;
 	border-left:1px solid gray;
@@ -120,74 +126,111 @@ header{
 p{
 color:green;
 font-size:10px;
-margin-left:110px;
+margin-left:180px;
 }
 
 .one{
 	width:100px;
+	padding:5px 1px 5px 3px;
 	}
 
 .div2{
 	float:left;
 	margin-bottom:20px;
 	margin-left:50px;
+	width:65%;
+	
 }
 
 .acc{
-	float:right;
+	
 	margin-right:10px;
+	padding:5px 1px 5px 3px;
 }
 
 .acc1{
-	margin-left:38px;
+	margin-left:0;
 }
 
 .noimg{
 	height:100px;
 	border:1px solid grey;
 	width: 180px;
-    margin-left: 130px;
+    margin-left: 180px;
 	text-align:center;
 	
 	
 }
 
 .confg{
-	background-color: lightgray;
+	    background-color: lightgray;
     clear: left;
     height: 40px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     position: relative;
+    margin-top: 23px;
+    /* width: 750px; */
+    margin-left: -250px;
+    margin-right: -32px;
 	
 }
 
 .two{
 	
 	margin-bottom: 10px;
-    margin-top: 10px;
-    margin-left:700px;
+    margin-top: 7px;
+    margin-left: 700px;
     position: absolute;
     right: 85px;
-    padding: 3px;
-	border-radius: 2px;
+    padding: 4px;
+    border-radius: 2px;
+}
+
+.two:hover {
+
+	background-color:lightblue;
 }
 
 .four{
-	margin-right: 20px;
+	 margin-right: 26px;
     right: 0;
     position: absolute;
-    margin-top: 9px;
-    padding: 3px;
-	border-radius: 2px;
+    margin-top: 7px;
+    padding: 4px;
+    border-radius: 2px;
+}
+
+.four:hover {
+
+	background-color:lightblue;
 }
 
 .six{
 	width:115px;
-	margin-left: 15px;
+	padding:5px 1px 5px 3px;
+	
 }
 
 footer{
 	background-color:black;
 	height:40px;
+}
+
+.div2 label {
+
+width:35%;
+display:inline-block;
+
+}
+
+#em {
+
+	margin-right:4px;
+}
+
+#message {
+
+	margin-left:35%;
+
 }
 	
