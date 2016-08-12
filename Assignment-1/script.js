@@ -12,73 +12,116 @@ jQuery("#Reset_Form").click(function() {
 
 	});
 	
+$("#uname").focusout(function check_uname(){
+
+	var regex=/^([a-zA-Z0-9_]{5,10})$/;  
+	var x=$("#uname").val();
+	var x1=$("#umsg").text();
+
+	if(x!=null){
+		if(!(regex.test(x))){
+			$("#umsg").text("Not valid").css("color","red");
+		}
+		else{
+		$("#umsg").text("valid").css("color","red");
+		}
+	}
+	else{
+		$("#umsg").text("Fill details");
+	}
+});
+
+$("#email").focusout(function check_email(){
+
+	var regex=/\b[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\b/; //for email
+	var x=$("#email").val();
+	var x1=$("#mail").text();
+
+	if(x!=null){
+		if(!(regex.test(x))){
+			$("#mail").text("Not valid").css("color","red");
+		}
+		else{
+		$("#mail").text("valid").css("color","red");
+		}
+	}
+	else{
+		$("#mail").text("Fill details");
+	}
+});
+
+$("#pass").focusout(function check_password(){
+
+	var regex=/^([a-zA-Z0-9!@#$%^&*()_]{8,20})$/;//for password
+	var x=$("#pass").val();
+	var x1=$("#passw").text();
+
+	if(x!=null){
+		if(!(regex.test(x))){
+			$("#passw").text("Not valid").css("color","red");
+		}
+		else{
+		$("#passw").text("valid").css("color","red");
+		}
+	}
+	else{
+		$("#passw").text("Fill details");
+	}
+});
+
+$("#pass1").focusout(function check_conpass(){
+
+
+	var x=$("#pass").val();
+	var x1=$("#pass1").val();
+	
+	if(x != x1){
+		$("#message").html("Password and Confirm Password should match.").css("color","red");
+		}
+	else{
+		$("#passw1").text("valid");
+			$("#message").text("");
+	}
+});
+
+$("#empid").focusout(function check_empid(){
+
+	var regex=/^([0-9]{5})$/;			//for empid
+	var x=$("#empid").val();
+	var x1=$("#emp").text();
+
+	if(x!=null){
+		if(!(regex.test(x))){
+			$("#emp").text("Not valid").css("color","red");
+		}
+		else{
+		$("#emp").text("valid").css("color","red");
+		}
+	}
+	else{
+		$("#emp").text("Fill details");
+	}
+});	
+	
+
 jQuery("#Save_Form").click(function() {
-	var regex=/^([a-zA-Z]{3,8})$/;	//for fname
-	var regex1=/\b[a-zA-Z]+\b/;		//for lname
-	var regex2=/\b[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\b/; //for email
-	var regex3=/^([a-zA-Z0-9!@#$%^&*()_]{8,20})$/;//for password
-	var regex4=/^([a-zA-Z0-9_]{5,10})$/;   //for uname
-	var regex5=/^([0-9]{5})$/;			//for empid
-
-
-	var x=$("#fname").val();
-    var x1=$("#lname").val();
+	var x1=$("#uname").val();
 	var x2=$("#email").val();
 	var x3=$("#pass").val();
 	var x4=$("#pass1").val();
-	var x5=$("#uname").val();
-	var x6=$("#empid").val();
-	var x7=$("#loc").val();
-	var x8=$("#about").val();
+	var x5=$("#empid").val();
+	var y1=$("#umsg").html();
+	var y2=$("#mail").html();
+	var y3=$("#passw").html();
+	var y4=$("#passw1").html();
+	var y5=$("#emp").html();
 	
-	
+	if(x1!=null && y1=="valid" && x2!=null && y2=="valid" && x3!=null && y3=="valid" && x4!=null && y4=="valid" && x5!=null && y5=="valid"){
+		alert("Form submitted");
 		
-	
-		/*if(regex.test(x)){
-		$("#fmsg").html("Valid");
-		}
-		else{
-		$("#fmsg").html("Not valid").css("color","red");
+}
+	else{
+		alert("Form not submitted");
 	}
-	
-		if(regex1.test(x1)){
-		$("#lmsg").html("Valid");
-		}
-		else{
-		$("#lmsg").html("Not valid").css("color","red");
-	}*/
-	
-		if(regex2.test(x2)){
-		$("#mail").html("Valid");
-		}
-		else{
-		$("#mail").html("Not valid").css("color","red");
-	}
-	
-		if(regex3.test(x3)){
-		$("#passw").html("Valid");
-		}
-		else{
-		$("#passw").html("Not valid").css("color","red");
-	}
-	
-		if(x3 != x4){
-		$("#message").html("Password and Confirm Password should match.").css("color","red");
-		}
-		
-		if(regex4.test(x5)){
-		$("#umsg").html("Valid");
-		}
-		else{
-		$("#umsg").html("Not valid").css("color","red");
-	}
-	
-		if(regex5.test(x6)){
-		$("#emp").html("Valid");
-		}
-		else{
-		$("#emp").html("Not valid").css("color","red");
-	}
-
-
 });	
+
