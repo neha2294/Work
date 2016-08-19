@@ -23,7 +23,7 @@ $("#uname").focusout(function check_uname(){
 			$("#umsg").text("Not valid").css("color","red");
 		}
 		else{
-		$("#umsg").text("valid").css("color","red");
+		$("#umsg").text("valid");
 		}
 	}
 	else{
@@ -42,7 +42,7 @@ $("#email").focusout(function check_email(){
 			$("#mail").text("Not valid").css("color","red");
 		}
 		else{
-		$("#mail").text("valid").css("color","red");
+		$("#mail").text("valid");
 		}
 	}
 	else{
@@ -61,7 +61,7 @@ $("#pass").focusout(function check_password(){
 			$("#passw").text("Not valid").css("color","red");
 		}
 		else{
-		$("#passw").text("valid").css("color","red");
+		$("#passw").text("valid");
 		}
 	}
 	else{
@@ -95,7 +95,7 @@ $("#empid").focusout(function check_empid(){
 			$("#emp").text("Not valid").css("color","red");
 		}
 		else{
-		$("#emp").text("valid").css("color","red");
+		$("#emp").text("valid");
 		}
 	}
 	else{
