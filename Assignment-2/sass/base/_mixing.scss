@@ -1,0 +1,21 @@
+@mixin btnhovr{
+	background-color: lightblue;
+}
+
+@mixin btnmain{
+	margin-top: 7px;
+	border-radius: 2px;
+	position: absolute;
+	padding: 4px;
+}
+
+@mixin com($mtop, $mleft){
+	margin-top: $mtop;
+	margin-left: $mleft;
+}
+
+@mixin bag($bagr){
+	background-repeat: no-repeat;
+	background: $bagr;
+}
+

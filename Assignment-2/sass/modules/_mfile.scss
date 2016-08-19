@@ -10,28 +10,26 @@ body {
 }
 
 header{
-	height:50px;
-	background-color:black;
+	height:$ht;
+	background-color:$bg-col;
 	border-bottom:4px solid skyblue;
 }
 
 .main{
-	height:50px;
+	height:$ht;
 	width:50%;
-	float:right;
+	float:$fr;
 }
 
 .im{
-	margin-left: 50px;
-	float: left;
-	margin-top:5px;
+	@include com(5px, 50px);
+	float: $fl;
 }
 
 .name{
+	@include com(15px, 20px);
 	color:white;
-	margin-left: 20px;
-	float: left;
-	margin-top:15px;
+	float: $fl;
 }
 
 #man{
@@ -41,9 +39,9 @@ header{
 
 
 .field1{
-	float:right;
+	float:$fr;
 	border-left:1px solid gray;
-	height:50px;
+	height:$ht;
 	opacity:0.2px;
 	margin-bottom:50px;
 }
@@ -55,39 +53,28 @@ header{
 #navlist li {
     margin: 0;
     padding: 0;
-    list-style: none;
-   
-   
+    list-style: none;  
 }
 
 #navlist li, #navlist a {
     height: 25px;
     display: block;
 	width:25px;
-	 float:left;
+	 float:$fl;
 	 padding:8px;
 }
 
 #home {
-  
-    
-    background: url('../images/i1.png');
-	background-repeat:no-repeat;
+   @include bag(url('i1.png'));
 	border-radius:2px;
 }
 
 #prev {
-    
-   
-    background: url('../images/i2.png');
-	background-repeat:no-repeat;
+    @include bag(url('i2.png'));
 }
 
 #next {
-   
-
-    background: url('../images/i3.png');
-	background-repeat:no-repeat;
+	@include bag(url('i3.png'));
 }
 
 
@@ -98,7 +85,7 @@ header{
 }
 	
 .back:hover{
-	background-color: grey;
+	background-color: $bg-col1;
 	opacity: 0.5;
 }	
 
@@ -114,13 +101,13 @@ header{
 
 .div1{
 	width:200px;
-	float:left;
+	float:$fl;
 }
 	
 .pic{
 	height: 150px;
 	width: 150px;
-	background-color:grey;
+	background-color:$bg-col1;
 }
 	
 p{
@@ -135,7 +122,7 @@ margin-left:180px;
 	}
 
 .div2{
-	float:left;
+	float:$fl;
 	margin-bottom:20px;
 	margin-left:50px;
 	width:65%;
@@ -162,47 +149,14 @@ margin-left:180px;
 	
 }
 
-.confg{
-	    background-color: lightgray;
+.confg {
+	@include com(23px, -250px);
+	background-color: lightgray;
     clear: left;
     height: 40px;
-    /* margin-bottom: 20px; */
     position: relative;
-    margin-top: 23px;
-    /* width: 750px; */
-    margin-left: -250px;
     margin-right: -32px;
 	
-}
-
-.two{
-	
-	margin-bottom: 10px;
-    margin-top: 7px;
-    margin-left: 700px;
-    position: absolute;
-    right: 85px;
-    padding: 4px;
-    border-radius: 2px;
-}
-
-.two:hover {
-
-	background-color:lightblue;
-}
-
-.four{
-	 margin-right: 26px;
-    right: 0;
-    position: absolute;
-    margin-top: 7px;
-    padding: 4px;
-    border-radius: 2px;
-}
-
-.four:hover {
-
-	background-color:lightblue;
 }
 
 .six{
@@ -212,7 +166,7 @@ margin-left:180px;
 }
 
 footer{
-	background-color:black;
+	background-color:$bg-col;
 	height:40px;
 }
 
