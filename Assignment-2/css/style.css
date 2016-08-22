@@ -1,46 +1,45 @@
 body {
 	padding:0;
 	margin:0;
-
 }
 
-.wrapper{
+.wrapper {
 	width:800px;
 	margin:0 auto;
 }
 
-header{
+header {
 	height:50px;
 	background-color:black;
 	border-bottom:4px solid skyblue;
 }
 
-.main{
+.profile {
 	height:50px;
 	width:50%;
 	float:right;
 }
 
-.im{
+.profile-image {
 	margin-left: 50px;
 	float: left;
 	margin-top:5px;
 }
 
-.name{
+img {
+	border: 2px solid white;
+	border-radius: 2px;
+	margin-bottom:15px;
+}
+
+.name {
 	color:white;
 	margin-left: 20px;
 	float: left;
 	margin-top:15px;
 }
 
-#man{
-	color:red;
-}
-
-
-
-.field1{
+.display-icons {
 	float:right;
 	border-left:1px solid gray;
 	height:50px;
@@ -56,143 +55,134 @@ header{
     margin: 0;
     padding: 0;
     list-style: none;
-   
-   
 }
 
 #navlist li, #navlist a {
     height: 25px;
     display: block;
 	width:25px;
-	 float:left;
-	 padding:8px;
+	float:left;
+	padding:8px;
 }
 
 #home {
-  
-    
-    background: url('../images/i1.png');
+	background: url('../images/i1.png');
 	background-repeat:no-repeat;
 	border-radius:2px;
 }
 
 #prev {
-    
-   
-    background: url('../images/i2.png');
+	background: url('../images/i2.png');
 	background-repeat:no-repeat;
 }
 
 #next {
-   
-
-    background: url('../images/i3.png');
+	background: url('../images/i3.png');
 	background-repeat:no-repeat;
 }
 
-
-.back{
-	display: inline-block;
-	height:28px;
-	width:32px;
-}
-	
-.back:hover{
-	background-color: grey;
-	opacity: 0.5;
-}	
-
-.sec2{
+.user-details {
 	margin:auto;
 }
 
-.sec2:after{
-	clear:both;
-	content: "";
-	display:block;
-}
-
-.div1{
+.upload-data {
 	width:200px;
 	float:left;
 }
-	
-.pic{
+
+.picture {
 	height: 150px;
 	width: 150px;
 	background-color:grey;
 }
+
+.picture-class {
+	width:100px;
+	padding:5px 1px 5px 3px;
+}
+
+.user-info {
+	float:left;
+	margin-bottom:20px;
+	margin-left:50px;
+	width:65%;
+}
+
+.user-info  input {
 	
-p{
+	margin-right:8px;
+	padding:5px 1px 5px 3px;
+}
+
+.user-info label {
+
+width:35%;
+display:inline-block;
+
+}
+
+#mandatory-symbol {
+	color:red;
+}
+
+.access {
+	margin-left:0;
+}
+
+#message {
+	margin-left:35%;
+}
+
+#foremp {
+	margin-right:4px;
+}
+
+.greeting{
+	width:115px;
+	padding:5px 1px 5px 3px;
+}
+
+p {
 color:green;
 font-size:10px;
 margin-left:180px;
 }
 
-.one{
-	width:100px;
-	padding:5px 1px 5px 3px;
-	}
-
-.div2{
-	float:left;
-	margin-bottom:20px;
-	margin-left:50px;
-	width:65%;
-	
-}
-
-.acc{
-	
-	margin-right:10px;
-	padding:5px 1px 5px 3px;
-}
-
-.acc1{
-	margin-left:0;
-}
-
-.noimg{
+.noimg {
 	height:100px;
 	border:1px solid grey;
 	width: 180px;
     margin-left: 180px;
 	text-align:center;
-	
-	
 }
 
-.confg{
-	    background-color: lightgray;
+.action {
+	background-color: lightgray;
     clear: left;
     height: 40px;
-    /* margin-bottom: 20px; */
     position: relative;
     margin-top: 23px;
-    /* width: 750px; */
     margin-left: -250px;
     margin-right: -32px;
 	
 }
 
-.two{
-	
+.save {
 	margin-bottom: 10px;
     margin-top: 7px;
     margin-left: 700px;
     position: absolute;
-    right: 85px;
+    right: 64px;
     padding: 4px;
     border-radius: 2px;
 }
 
-.two:hover {
-
+.save:hover {
 	background-color:lightblue;
 }
 
-.four{
-	 margin-right: 26px;
+.cancel{
+	margin-right: 26px;
     right: 0;
     position: absolute;
     margin-top: 7px;
@@ -200,37 +190,22 @@ margin-left:180px;
     border-radius: 2px;
 }
 
-.four:hover {
-
+.cancel:hover {
 	background-color:lightblue;
 }
 
-.six{
-	width:115px;
-	padding:5px 1px 5px 3px;
-	
+.user-details:after {
+	clear:both;
+	content: "";
+	display:block;
 }
 
-footer{
+footer {
 	background-color:black;
 	height:40px;
 }
 
-.div2 label {
 
-width:35%;
-display:inline-block;
 
-}
 
-#em {
-
-	margin-right:4px;
-}
-
-#message {
-
-	margin-left:35%;
-
-}
 	
