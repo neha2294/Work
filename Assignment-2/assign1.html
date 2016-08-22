@@ -8,86 +8,118 @@
 		<section class="wrapper">
 		
 			<header>
-				<div class="main">
-					<div class="im">
-						<img src="images/12.png" alt="not found" style="border: 2px solid white; border-radius: 2px;margin-bottom:15px;"></img>
+				<div class="profile">
+					<div class="profile-image">
+						<img src="images/12.png" alt="not found"></img>
 					</div>
 					<div class="name">
 						NEHA
 					</div>
-					<div class="field1">
+					<div class="display-icons">
 						<ul id="navlist">
-						  <li id="home"><a href=""></a></li>
-						  <li id="prev"><a href=""></a></li>
-						  <li id="next"><a href=""></a></li>
+						  <li id="home"></li>
+						  <li id="prev"></li>
+						  <li id="next"></li>
 						</ul>
-						
 					</div>
 				</div>	
 			</header>
 		
-			<section class="sec2">
+		<section class="user-details">
 				<h3>USER PROFILE</h3>
 				<hr>
 				
-				<div class="div1">	
-					<div class="pic"></div>
+				<div class="upload-data">	
+					<div class="picture"></div>
 					<h5>Upload Profile Picture:</h5>
 					<form>
-						<input class="one" type="text" placeholder="Upload Picture">
+						<input class="picture-class" type="text" placeholder="Upload Picture">
 						<input type="button" name="" value="Browse"><br><br>
 						<input type="button" name="" value="Upload">
 					</form>
-					</div>
-				</div>	
-				
-				<div class="div2">
-					<form>
-						<h4>Login Info</h4>
-						<label>User Name:<span id="man">*</span></label> <input id="uname" class="acc" type="text" placeholder="User Name"/><span id="umsg"></span>
-								 <br><br>
-						<label>Email:<span id="man">*</span></label> <input id="email" class="acc" type="text" placeholder="Email Address" />
-								   <span id="mail"></span><br><br>
-						<label>Password:<span id="man">*</span></label> <input id="pass" class="acc" type="password" placeholder="Password"/>
-									 <span id="passw"></span><br><br>
-						<label>Confirm Password:<span id="man">*</span></label> <input id="pass1" class="acc" type="password" placeholder="Confirm Password" />
-										 <span id="passw1"></span><br><br>
-						<span id="message"></span><br><br>
-						<label>Access Level:</label>  <input class="acc1" type="radio" name=" " value=" "/> Admin
-										<input class="acc1" type="radio" name=" " value=" "/> User<br><br>
-				
-						<h4>Personal Info</h4>
-						<label>First Name: <span></span></label> <input id="fname"class="acc" type="text" placeholder="First Name"/>  <span id="fmsg"></span><br><br>
-						<label>Last Name:<span></span></label> <input id="lname"class="acc" type="text" placeholder="Last Name"/> <span id="lmsg"></span><br><br>
-						<label id="em">Employee Id: <span id="man">*</span> </label><input id="empid" class="acc" type="text" placeholder="Employee Id" /> <span id="emp"></span><br><br>
-						<label>Location:<span></span></label> <input id="loc" class="acc" type="text" placeholder="Location" /> <span id="loca" ></span><br><br>
-						<label id="em">About:<span></span> </label><input id="about" class="acc" type="text" placeholder="About"/> <span id="abt" /></span><br><br>
-						
-						<h4>Add New Greeting</h4>
-						<label>Upload Greeting:</label><input class="six" type="text" placeholder="Upload Greetings" />
-						<input type="button" name="" value="Browse">
-						
-						<p>(Upload greetings in .png,.jpg or .pdf format only)</p>
-				
-					<div class="noimg"><br><br>
-						No image available
-					</div>
-				
-		
-				<div class="confg">
-					
-						<input id="Save_Form" class="two" type="button" name="" value="Save">
-						<input id="Reset_Form" class="four" type="button" name="" value="Cancel">
-					
 				</div>
 				
-					</form>
-					</div>
-			</section>
-	
-		<footer></footer>
+				<div class="user-info">
+					<form>
+						<h4>Login Info</h4>
+						<label>User Name:<sup id="mandatory-symbol">*</sup>
+						</label> 
+						<input id="uname"  type="text" placeholder="User Name"/>
+						<span id="umsg"></span>
+						<br><br>
+						
+						<label>Email:<sup id="mandatory-symbol">*</sup>
+						</label>
+						<input id="email" type="text" placeholder="Email Address" />
+						<span id="mail"></span>
+						<br><br>
+						
+						<label>Password:<sup id="mandatory-symbol">*</sup>
+						</label> 
+						<input id="pass"  type="password" placeholder="Password"/>
+						<span id="passw"></span>
+						<br><br>
+						
+						<label>Confirm Password:<sup id="mandatory-symbol">*</sup>
+						</label>
+						<input id="cpass"  type="password" placeholder="Confirm Password" />
+						<span id="cpassw"></span>
+						<br><br>
+						<span id="message"></span><br><br>
+						
+						<label>Access Level:
+						</label>
+						<input class="access" type="radio" name=" " value=" "/> Admin
+						<input class="access" type="radio" name=" " value=" "/> User
+						<br><br>
+				
+						<h4>Personal Info</h4>
+						<label>First Name:</label> 
+						<input id="fname"  type="text" placeholder="First Name"/>
+						<span id="fmsg"></span>
+						<br><br>
+						
+						<label>Last Name:</label>
+						<input id="lname" type="text" placeholder="Last Name"/>
+						<span id="lmsg"></span>
+						<br><br>
+						
+						<label id="foremp">Employee Id:<sup id="mandatory-symbol">*</sup>
+						</label><input id="empid"  type="text" placeholder="Employee Id" />
+						<span id="emp"></span>
+						<br><br>
+						
+						<label>Location:</label>
+						<input id="location" type="text" placeholder="Location" /> 
+						<span id="location-msg" ></span>
+						<br><br>
+						
+						<label>About:</label>
+						<input id="about" type="text" placeholder="About"/>
+						<span id="about-msg" /></span>
+						<br><br>
+						
+						<h4>Add New Greeting</h4>
+						<label>Upload Greeting:</label>
+						<input class="greeting" type="text" placeholder="Upload Greetings" />
+						<input type="button" name="" value="Browse">
+						<p>(Upload greetings in .png,.jpg or .pdf format only)</p>
+				
+						<div class="noimg"><br><br>
+						No image available
+						</div>
+				
 		
+						<div class="action">
+							<input id="Save_Form" class="save" type="button" name="" value="Save">
+							<input id="Reset_Form" class="cancel" type="button" name="" value="Cancel">
+						</div>
+				
+					</form>
+				</div>
 		</section>
+	
+	<footer> </footer>
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 		<script src="js/script.js"></script>
