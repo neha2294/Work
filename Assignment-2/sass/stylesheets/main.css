@@ -1,0 +1,231 @@
+/* line 1, ../sass/modules/_mfile.scss */
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 7, ../sass/modules/_mfile.scss */
+.wrapper {
+  width: 800px;
+  margin: 0 auto;
+}
+
+/* line 12, ../sass/modules/_mfile.scss */
+header {
+  height: 50px;
+  background-color: black;
+  border-bottom: 4px solid skyblue;
+}
+
+/* line 18, ../sass/modules/_mfile.scss */
+.profile {
+  height: 50px;
+  width: 50%;
+  float: right;
+}
+
+/* line 24, ../sass/modules/_mfile.scss */
+.profile-image {
+  margin-top: 5px;
+  margin-left: 50px;
+  float: left;
+}
+
+/* line 29, ../sass/modules/_mfile.scss */
+img {
+  border: 2px solid white;
+  border-radius: 2px;
+  margin-bottom: 15px;
+}
+
+/* line 36, ../sass/modules/_mfile.scss */
+.name {
+  margin-top: 15px;
+  margin-left: 20px;
+  color: white;
+  float: left;
+}
+
+/* line 42, ../sass/modules/_mfile.scss */
+.display-icons {
+  float: right;
+  border-left: 1px solid gray;
+  height: 50px;
+  opacity: 0.2px;
+  margin-bottom: 50px;
+}
+
+/* line 50, ../sass/modules/_mfile.scss */
+#navlist {
+  margin-bottom: 10px;
+}
+
+/* line 54, ../sass/modules/_mfile.scss */
+#navlist li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 60, ../sass/modules/_mfile.scss */
+#navlist li, #navlist a {
+  height: 25px;
+  display: block;
+  width: 25px;
+  float: left;
+  padding: 8px;
+}
+
+/* line 68, ../sass/modules/_mfile.scss */
+#home {
+  background-repeat: no-repeat;
+  background: url("i1.png");
+  border-radius: 2px;
+}
+
+/* line 73, ../sass/modules/_mfile.scss */
+#prev {
+  background-repeat: no-repeat;
+  background: url("i2.png");
+}
+
+/* line 77, ../sass/modules/_mfile.scss */
+#next {
+  background-repeat: no-repeat;
+  background: url("i3.png");
+}
+
+/* line 81, ../sass/modules/_mfile.scss */
+.user-details {
+  margin: auto;
+}
+
+/* line 85, ../sass/modules/_mfile.scss */
+.upload-data {
+  width: 200px;
+  float: left;
+}
+
+/* line 90, ../sass/modules/_mfile.scss */
+.picture {
+  height: 150px;
+  width: 150px;
+  background-color: grey;
+}
+
+/* line 96, ../sass/modules/_mfile.scss */
+.picture-class {
+  width: 100px;
+  padding: 5px 1px 5px 3px;
+}
+
+/* line 101, ../sass/modules/_mfile.scss */
+.user-info {
+  float: left;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  width: 65%;
+}
+
+/* line 108, ../sass/modules/_mfile.scss */
+.user-info label {
+  width: 35%;
+  display: inline-block;
+}
+
+/* line 113, ../sass/modules/_mfile.scss */
+#mandatory-symbol {
+  color: red;
+}
+
+/* line 117, ../sass/modules/_mfile.scss */
+.access {
+  margin-left: 0;
+}
+
+/* line 121, ../sass/modules/_mfile.scss */
+#message {
+  margin-left: 35%;
+}
+
+/* line 127, ../sass/modules/_mfile.scss */
+#foremp {
+  margin-right: 4px;
+}
+
+/* line 132, ../sass/modules/_mfile.scss */
+.greeting {
+  width: 115px;
+  padding: 5px 1px 5px 3px;
+}
+
+/* line 138, ../sass/modules/_mfile.scss */
+p {
+  color: green;
+  font-size: 10px;
+  margin-left: 180px;
+}
+
+/* line 144, ../sass/modules/_mfile.scss */
+.noimg {
+  height: 100px;
+  border: 1px solid grey;
+  width: 180px;
+  margin-left: 180px;
+  text-align: center;
+}
+
+/* line 152, ../sass/modules/_mfile.scss */
+.action {
+  margin-top: 23px;
+  margin-left: -250px;
+  background-color: lightgray;
+  clear: left;
+  height: 40px;
+  position: relative;
+  margin-right: -32px;
+}
+
+/* line 162, ../sass/modules/_mfile.scss */
+.user-details:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+/* line 168, ../sass/modules/_mfile.scss */
+footer {
+  background-color: black;
+  height: 40px;
+}
+
+/* line 1, ../sass/modules/_buttons.scss */
+.save {
+  margin-top: 7px;
+  border-radius: 2px;
+  position: absolute;
+  padding: 4px;
+  margin-bottom: 10px;
+  margin-left: 700px;
+  right: 85px;
+}
+
+/* line 8, ../sass/modules/_buttons.scss */
+.save:hover {
+  background-color: lightblue;
+}
+
+/* line 12, ../sass/modules/_buttons.scss */
+.cancel {
+  margin-top: 7px;
+  border-radius: 2px;
+  position: absolute;
+  padding: 4px;
+  margin-right: 26px;
+  right: 0;
+}
+
+/* line 18, ../sass/modules/_buttons.scss */
+.cancel:hover {
+  background-color: lightblue;
+}
