@@ -20,7 +20,7 @@ $("#Reset_Form").click(function() {
 	var emp = jQuery("#emp").hide();
 	var fmsg = jQuery("#fmsg").hide();
 
-	});
+});
 
 /*To validate user name*/	
 $("#uname").change(function check_uname(){
@@ -41,7 +41,6 @@ $("#uname").change(function check_uname(){
 });
 
 /*To validate user email address*/	 
-
 $("#email").change(function check_email(){
 
 	var regex=/\b[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\b/; //for email
@@ -60,7 +59,6 @@ $("#email").change(function check_email(){
 });
 
 /*To validate password*/	
-
 $("#pass").change(function check_password(){
 
 	var regex=/^([a-zA-Z0-9!@#$%^&*()_]{8,20})$/;//for password
@@ -79,9 +77,7 @@ $("#pass").change(function check_password(){
 });
 
 /*To validate confirm password*/	
-
 $("#pass1").change(function check_conpass(){
-
 
 	var x=$("#cpass").val();
 	var x1=$("#cpass").val();
@@ -96,7 +92,6 @@ $("#pass1").change(function check_conpass(){
 });
 
 /*To validate user employee id*/	
-
 $("#empid").change(function check_empid(){
 
 	var regex=/^([0-9]{5})$/;			//for empid
@@ -115,7 +110,6 @@ $("#empid").change(function check_empid(){
 });	
 
 /*To validate first name*/	
-
 $("#fname").change(function check_fname(){
 
 	var regex= /^([a-zA-Z]{3,8})$/;		//for fname
@@ -134,7 +128,6 @@ $("#fname").change(function check_fname(){
 });	
 	
 /*To save user details*/	
-
 $("#Save_Form").click(function() {
 	var x1=$("#uname").val();
 	var x2=$("#email").val();
@@ -155,7 +148,7 @@ $("#Save_Form").click(function() {
 	if(x1!=null && y1=="valid" && x2!=null && y2=="valid" && x3!=null && y3=="valid" && x4!=null && y4=="valid" && x5!=null && y5=="valid"){
 		alert("Form submitted"+"\n"+"Username :" + x1 +"\n"+"Email :" + x2+"\n"+"First Name :" + x6+"\n"+"Last Name :" + x7+"\n"+"Employee Id :" + x5+"\n"+"Location :" + x8+"\n"+"About :" + x9);
 		
-}
+	}
 	else{
 		alert("Form not submitted");
 	}
