@@ -77,17 +77,18 @@ $("#pass").change(function check_password(){
 });
 
 /*To validate confirm password*/	
-$("#pass1").change(function check_conpass(){
+$("#cpass").change(function check_conpass(){
 
-	var x=$("#cpass").val();
+	var x=$("#pass").val();
 	var x1=$("#cpass").val();
 	
-	if(x != x1){
+	if(x!=x1){
 		$("#message").html("Password and Confirm Password should match.").css("color","red");
 		}
 	else{
-		$("#passw1").text("valid").hide();
-			$("#message").text("").hide();
+		$("#cpassw").text("valid").hide();
+		$("#message").text("").hide();
+			
 	}
 });
 
@@ -132,7 +133,7 @@ $("#Save_Form").click(function() {
 	var x1=$("#uname").val();
 	var x2=$("#email").val();
 	var x3=$("#pass").val();
-	var x4=$("#pass1").val();
+	var x4=$("#cpass").val();
 	var x5=$("#empid").val();
 	var x6=$("#fname").val();
 	var x7=$("#lname").val();
