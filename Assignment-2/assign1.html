@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 	
 	<head>
+		<!--Stylesheet link-->
 		<link rel="stylesheet" href="css/style.css"/>
 	</head>
 	
 	<body>
+		<!-- Main Section-->
 		<section class="wrapper">
 		
 			<header>
@@ -15,49 +17,53 @@
 					<div class="name">
 						NEHA
 					</div>
+					
 					<div class="display-icons">
-						<ul id="navlist">
-						  <li id="home"></li>
-						  <li id="prev"></li>
-						  <li id="next"></li>
-						</ul>
+						<img src="images/i1.png" alt="not found"></img>
+						<img src="images/i2.png" alt="not found"></img>
+						<img src="images/i3.png" alt="not found"></img>
+
+
 					</div>
 				</div>	
 			</header>
 		
+		<!-- Section for user details-->
 		<section class="user-details">
 				<h3>USER PROFILE</h3>
 				<hr>
 				
+				<!--Div for profile picture upload-->
 				<div class="upload-data">	
 					<div class="picture"></div>
 					<h5>Upload Profile Picture:</h5>
 					<form>
 						<input class="picture-class" type="text" placeholder="Upload Picture">
-						<input type="button" name="" value="Browse"><br><br>
-						<input type="button" name="" value="Upload">
+						<button type="button">Browse</button><br><br>
+						<button type="button">Upload</button>
 					</form>
 				</div>
 				
+				<!--Div for form details-->
 				<div class="user-info">
 					<form>
 						<h4>Login Info</h4>
 						<label>User Name:<sup id="mandatory-symbol">*</sup>
 						</label> 
 						<input id="uname"  type="text" placeholder="User Name"/>
-						<span id="umsg"></span>
+						<span id="umsg" class="msgColor"></span>
 						<br><br>
 						
 						<label>Email:<sup id="mandatory-symbol">*</sup>
 						</label>
 						<input id="email" type="text" placeholder="Email Address" />
-						<span id="mail"></span>
+						<span id="mail" class="msgColor"></span>
 						<br><br>
 						
 						<label>Password:<sup id="mandatory-symbol">*</sup>
 						</label> 
 						<input id="pass"  type="password" placeholder="Password"/>
-						<span id="passw"></span>
+						<span id="passw" class="msgColor"></span>
 						<br><br>
 						
 						<label>Confirm Password:<sup id="mandatory-symbol">*</sup>
@@ -75,8 +81,8 @@
 				
 						<h4>Personal Info</h4>
 						<label>First Name:</label> 
-						<input id="fname"  type="text" placeholder="First Name"/>
-						<span id="fmsg"></span>
+						<input id="fname" type="text" placeholder="First Name"/>
+						<span id="fmsg" class="msgColor" ></span>
 						<br><br>
 						
 						<label>Last Name:</label>
@@ -86,7 +92,7 @@
 						
 						<label id="foremp">Employee Id:<sup id="mandatory-symbol">*</sup>
 						</label><input id="empid"  type="text" placeholder="Employee Id" />
-						<span id="emp"></span>
+						<span id="emp" class="msgColor"></span>
 						<br><br>
 						
 						<label>Location:</label>
@@ -109,19 +115,23 @@
 						No image available
 						</div>
 				
-		
+						<!--Div for button-->
 						<div class="action">
-							<input id="Save_Form" class="save" type="button" name="" value="Save">
-							<input id="Reset_Form" class="cancel" type="button" name="" value="Cancel">
+							<button id="Save_Form" class="save">Save</button>
+							<button id="Reset_Form" class="cancel">Cancel</button>
 						</div>
 				
 					</form>
 				</div>
 		</section>
 	
-	<footer> </footer>
+		<footer> 
+		</footer>
 		
+		</section>
+		<!--Load jQuery Library-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<!--External JS file Link-->
 		<script src="js/script.js"></script>
 	</body>
 </html>

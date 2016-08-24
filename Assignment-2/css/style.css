@@ -47,6 +47,12 @@ img {
 	margin-bottom:50px;
 }
 
+.display-icons img{
+	border:0;
+	margin:13px 5px;
+
+}
+
 #navlist {
   margin-bottom:10px; 
 }
@@ -57,7 +63,7 @@ img {
     list-style: none;
 }
 
-#navlist li, #navlist a {
+#navlist li {
     height: 25px;
     display: block;
 	width:25px;
@@ -125,6 +131,10 @@ display:inline-block;
 	color:red;
 }
 
+.msgColor{
+	color:red;
+}
+
 .access {
 	margin-left:0;
 }
@@ -172,7 +182,7 @@ margin-left:180px;
     margin-top: 7px;
     margin-left: 700px;
     position: absolute;
-    right: 64px;
+    right: 85px;
     padding: 4px;
     border-radius: 2px;
 }
