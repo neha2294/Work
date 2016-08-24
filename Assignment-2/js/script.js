@@ -2,7 +2,7 @@
 $("#Reset_Form").click(function() {
     
 	var uname = jQuery("#uname").val("");
-    var fname = jQuery("#fname").val("");
+	var fname = jQuery("#fname").val("");
 	var lname = jQuery("#lname").val("");
 	var email = jQuery("#email").val("");
 	var pass = jQuery("#pass").val("");
