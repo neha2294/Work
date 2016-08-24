@@ -10,8 +10,8 @@ body {
 
 header {
 	height:50px;
-	background-color:black;
-	border-bottom:4px solid skyblue;
+	background-color:#000;
+	border-bottom:4px solid #87ceeb;
 }
 
 .profile {
@@ -27,7 +27,7 @@ header {
 }
 
 img {
-	border: 2px solid white;
+	border: 2px solid #fff;
 	border-radius: 2px;
 	margin-bottom:15px;
 }
@@ -41,7 +41,7 @@ img {
 
 .display-icons {
 	float:right;
-	border-left:1px solid gray;
+	border-left:1px solid #808080;
 	height:50px;
 	opacity:0.2px;
 	margin-bottom:50px;
@@ -99,7 +99,7 @@ img {
 .picture {
 	height: 150px;
 	width: 150px;
-	background-color:grey;
+	background-color:#808080;
 }
 
 .picture-class {
@@ -128,11 +128,11 @@ display:inline-block;
 }
 
 #mandatory-symbol {
-	color:red;
+	color:#ff0000;
 }
 
 .msgColor{
-	color:red;
+	color:#ff0000;
 }
 
 .access {
@@ -153,21 +153,21 @@ display:inline-block;
 }
 
 p {
-color:green;
+color:#008000;
 font-size:10px;
 margin-left:180px;
 }
 
 .noimg {
 	height:100px;
-	border:1px solid grey;
+	border:1px solid #808080;
 	width: 180px;
     margin-left: 180px;
 	text-align:center;
 }
 
 .action {
-	background-color: lightgray;
+	background-color: #d3d3d3;
     clear: left;
     height: 40px;
     position: relative;
@@ -188,7 +188,7 @@ margin-left:180px;
 }
 
 .save:hover {
-	background-color:lightblue;
+	background-color:#add8ec;
 }
 
 .cancel{
@@ -201,7 +201,7 @@ margin-left:180px;
 }
 
 .cancel:hover {
-	background-color:lightblue;
+	background-color:#add8ec;
 }
 
 .user-details:after {
@@ -211,7 +211,7 @@ margin-left:180px;
 }
 
 footer {
-	background-color:black;
+	background-color:#000;
 	height:40px;
 }
 
