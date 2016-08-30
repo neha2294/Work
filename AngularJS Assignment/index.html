@@ -24,9 +24,7 @@
 		<th ng-click="orderbyme('lastName')">Last Name</th>
         <th ng-click="orderbyme('empId')">Employee Id</th>
 		<th>Action</th>
-		
-		
-      </tr>
+	  </tr>
       <tr ng-repeat="country in countries | orderBy: myOrderBy ">
         <td>{{country.firstName}}</td>
 		<td>{{country.lastName}}</td>
@@ -38,5 +36,22 @@
 		</td>
       </tr>
     </table>
+	<br><br>
+	
+	<button id="add">Add</button><br><br>
+	<script>
+
+	
+	</script>
+	<form id="details">
+	
+    <label> First Name</label> 
+        <input type="text" name="fname" ng-model="fname"/><br><br>
+    <label>Last Name</label> 
+        <input type="text" name="lname" ng-model="lname"/><br><br>
+    <label>Employee Id</label> 
+        <input type="text" name="eid" ng-model="eid"/>
+	</form>	
+	
   </body>
 </html>
