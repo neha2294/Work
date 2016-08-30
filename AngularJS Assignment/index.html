@@ -1,0 +1,42 @@
+<html ng-app="countryApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Angular.js JSON Fetching Example</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+    <script>
+      var countryApp = angular.module('countryApp', []);
+      countryApp.controller('CountryCtrl', function ($scope, $http){
+        $http.get('json/demo.json').success(function(data) {
+          $scope.countries = data;
+        });
+		$scope.orderbyme = function(x) {
+        $scope.myOrderBy = x;
+    }
+      });
+    </script>
+  </head>
+  <body ng-controller="CountryCtrl">
+	<h2>Angular.js JSON Fetching Example</h2>
+    <table border = "2">
+      <tr>
+        <th ng-click="orderbyme('firstName')">First Name</th>
+		<th ng-click="orderbyme('lastName')">Last Name</th>
+        <th ng-click="orderbyme('empId')">Employee Id</th>
+		<th>Action</th>
+		
+		
+      </tr>
+      <tr ng-repeat="country in countries | orderBy: myOrderBy ">
+        <td>{{country.firstName}}</td>
+		<td>{{country.lastName}}</td>
+        <td>{{country.empId}}</td>
+		
+		<td>
+        <a  href="#" ng-click="edit">edit</a> | 
+        <a href="#" ng-click="delete">delete</a>
+		</td>
+      </tr>
+    </table>
+  </body>
+</html>
