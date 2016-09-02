@@ -4,60 +4,45 @@
     <title>Angular.js JSON Fetching Example</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
-    <script>
-      var myApp = angular.module('myApp', []);
-      myApp.controller('myCtrl', function ($scope, $http){
-		$scope.click = function() {
-        $http.get('json/demo.json').success(function(data) {
-          $scope.emp = data;
-        });
-		};
-		$scope.orderbyme = function(x) {
-        $scope.myOrderBy = x;
-		}
-		$scope.showMe = function(){
-         $scope.show=true;
-       }
-	   
-	  
-    });
-    </script>
+	<script src="js/script.js"></script>
+   
   </head>
   <body ng-controller="myCtrl">
 	<h2>Angular.js JSON Fetching Example</h2>
     <table border = "2">
       <tr>
-        <th ng-click="orderbyme('firstName')">First Name</th>
-		<th ng-click="orderbyme('lastName')">Last Name</th>
-        <th ng-click="orderbyme('empId')">Employee Id</th>
+        <th ng-click="orderbyme('fname')">First Name</th>
+		<th ng-click="orderbyme('lname')">Last Name</th>
+        <th ng-click="orderbyme('eid')">Employee Id</th>
 		<th>Action</th>
 	  </tr>
       <tr ng-repeat="employee in emp | orderBy: myOrderBy ">
-        <td>{{employee.firstName}}</td>
-		<td>{{employee.lastName}}</td>
-        <td>{{employee.empId}}</td>
+        <td>{{employee.fname}}</td>
+	   <td>{{employee.lname}}</td>
+	   <td>{{employee.eid}}</td>
+		
 		
 		<td>
-        <a href="#" ng-click="edit()">edit</a> | 
-        <a href="#" ng-click="delete()">delete</a>
+        <a href="#" ng-click="changeData(employee,0);ShowHide();" >edit</a> | 
+        <a href="#" ng-click="delete($index)">delete</a>
 		</td>
       </tr>
-    </table>
+	</table>
 	<br><br>
 	
 	<button ng-click="click()">Submit</button><br><br>
-	<button ng-click="showMe()">Add</button><br><br>
+	<button ng-click="ShowHide()">Add</button><br><br>
 	
-	<form ng-show="show">
+	<form ng-show="IsVisible">
 	
-    <label> First Name</label> 
-        <input type="text" name="fname"/><br><br>
-    <label>Last Name</label> 
-        <input type="text" name="lname"/><br><br>
-    <label>Employee Id</label> 
-        <input type="text" name="eid"/>
+    <label>First Name:</label> 
+        <input type="text" ng-model="e.fname"/><br><br>
+    <label>Last Name:</label> 
+        <input type="text" ng-model="e.lname"/><br><br>
+    <label>Employee Id:</label> 
+        <input type="text" ng-model="e.eid"/>
 	</form>	
-	<button ng-click="save()">Save</button><br><br>
+	<button ng-click="changeData(e,1)">Save</button><br><br>
 	
   </body>
 </html>
