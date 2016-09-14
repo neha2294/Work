@@ -3,23 +3,72 @@
 }
 
 .btn{
-	margin-right:10px;
-	margin-top: 11px;
+	margin-left:2%;
+	margin-top: 1%;
+}
+
+header .btn-primary{
+	color:black;
+	background-color:#ffe6e6;
+	border-color:transparent;
+}
+.btn-change{
+float:left;
+margin-top:5px;
+}
+.form-control{
+	width:50%;
+}
+
+body h3{
+	text-align:center;
+	color:blue;
+	text-transform:uppercase;
+	font-size:40px;
+	font-family:"Times New Roman";
+}
+body h3:hover{
+	color:grey;
+}
+
+.bg-info{
+	margin-left:4%;
+	margin-right:4%;
+}
+input{
+	padding: 5px 1px 5px 3px;
+}
+.border1{
+	background-color:light-blue;
+	margin:5% 10%;
 }
 
 .btn-2{
 	margin-left:17%;
+	color:black;
+	background-color:#ffe6e6;
+	border-color:transparent;
+}
+
+.btn-3{
+	color:black;
+	background-color:#ffe6e6;
+	border-color:transparent;
 }
 
 .form-control{
 	width:50%;
 }
-
+sup{
+	color:red;
+}
 .border{
 	border:2px solid black;
 	padding: 2% 1%;
 	margin:1% 1%;
+	background-color:#b3d9ff;	
 }
+
 .checkboxStyle {
     margin-left: 16.7%;
 }

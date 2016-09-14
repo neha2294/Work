@@ -3,7 +3,8 @@
 
 	</head>
 	
-		<form class="form-horizontal border">
+		<form class="container form-horizontal">
+		<div class="border">
 		 <div class="form-group">
 			<label class="col-sm-2 control-label">ISBN:</label> 
 			<div class="col-sm-10">
@@ -37,9 +38,10 @@
 			<div  class="checkboxStyle"><input type="checkbox" ng-click="toggleSelection('Flipkart')" value="Flipkart" ng-checked="book.availableOn.indexOf('Flipkart') > -1" name="availableOn[]"/>Flipkart</label></div>
 			<div  class="checkboxStyle"><input  type="checkbox" value="Google" ng-click="toggleSelection('Google')" ng-checked="book.availableOn.indexOf('Google') > -1" name="availableOn[]"/>Google</label></div>
 		</div>
-		<button class="btn btn-primary btn-2" type="submit" ng-click="edit()" ng-show="editBtn">Edit</button>
-		<button class="btn btn-primary btn-2" type="submit" ng-click="update(book,availableOn)" ng-show="updateBtn">Update</button>	
-		<button  class="btn btn-primary" type="submit" ng-click="deleteData(book.isbn)">Delete</button>
+		<button class="btn btn-primary btn-2" type="submit" ng-click="edit()" ng-show="editBtn"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span>Edit</button>
+		<button class="btn btn-primary btn-2" type="submit" ng-click="update(book,availableOn)" ng-show="updateBtn"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>Update</button>	
+		<button  class="btn btn-primary btn-3" type="submit" ng-click="deleteData(book.isbn)"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>Delete</button>
+		</div>
 		</form>	
 		
 	

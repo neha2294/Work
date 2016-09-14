@@ -24,11 +24,15 @@ var myApp = angular.module('myApp', ['ngRoute']);
 
 	});		
     
-	myApp.controller('myCtrl', function ($scope, $http){
+	myApp.controller('myCtrl', function ($scope,$location, $http){
 		
         $http.get("http://172.27.12.104:3000/book/list").then(function(response) {
 		  $scope.emp = response.data;
         });
+		$scope.getPath = function (){
+			return($location.path());
+		
+		};
 	});
 		
 		
@@ -68,6 +72,7 @@ var myApp = angular.module('myApp', ['ngRoute']);
 		$scope.update = function(authorData,avOn) {
 			$http.put('http://172.27.12.104:3000/author/update',authorData).then(function(response){
 			console.log(response.data);
+			alert("Record Updated");
 			});
 		};
 		
@@ -81,7 +86,7 @@ var myApp = angular.module('myApp', ['ngRoute']);
 				data: authorData
 			};
 			 $http(req).then(function(response){
-				alert(response.data);
+				alert("Record Added");
 			}); 
 		}
 		
@@ -108,7 +113,7 @@ var myApp = angular.module('myApp', ['ngRoute']);
 				}};
 			console.log(empid);
 			$http.delete('http://172.27.12.104:3000/author/remove',config).then(function(response){
-				alert(response);
+				alert("Record Deleted");
 			});
 		}
 	});		
@@ -152,6 +157,7 @@ var myApp = angular.module('myApp', ['ngRoute']);
 			bookData.availableOn=avOn;
 			$http.put('http://172.27.12.104:3000/book/update',bookData).then(function(response){
 			console.log(response.data);
+			alert("Record Updated");
 			});
 		};
 		$scope.addNew = function(bookData,avOn){
@@ -164,7 +170,7 @@ var myApp = angular.module('myApp', ['ngRoute']);
 				data: bookData
 			};
 			 $http(req).then(function(response){
-				alert(response.data);
+				alert("Record Added");
 			}); 
 		
 		}
@@ -191,7 +197,7 @@ var myApp = angular.module('myApp', ['ngRoute']);
 				}};
 			console.log(isbn);
 			$http.delete('http://172.27.12.104:3000/book/remove',config).then(function(response){
-				alert(response);
+				alert("Record Deleted");
 			});
 		}
 	});		
