@@ -1,0 +1,110 @@
+Welcome to Git (version 1.9.5-preview20141217)
+
+
+Run 'git help git' to display the help index.
+Run 'git help <command>' to display help for specific commands.
+
+nehabha@NEHABHA /D
+$ D:
+sh: D:: command not found
+
+nehabha@NEHABHA /D
+$ cd D:
+
+nehabha@NEHABHA /d
+$ dir
+sh: dir: command not found
+
+nehabha@NEHABHA /d
+$ git clone https://github.com/neha2294/Work.git
+Cloning into 'Work'...
+remote: Counting objects: 156, done.
+remote: Total 156 (delta 0), reused 0 (delta 0), pack-reused 156
+Receiving objects:  86% (135/156), 28.01 KiB | 20.00 KiB/s
+Receiving objects: 100% (156/156), 50.92 KiB | 20.00 KiB/s, done.
+Resolving deltas: 100% (66/66), done.
+Checking connectivity... done.
+
+nehabha@NEHABHA /d
+$ cd Work/
+
+nehabha@NEHABHA /d/Work (master)
+$ git checkout gh-pages
+Branch gh-pages set up to track remote branch gh-pages from origin.
+Switched to a new branch 'gh-pages'
+
+nehabha@NEHABHA /d/Work (gh-pages)
+$ dir
+sh: dir: command not found
+
+nehabha@NEHABHA /d/Work (gh-pages)
+$ ls
+AngularJS Assignment  Assignment-2  params.json
+Assignment-1          index.html    stylesheets
+
+nehabha@NEHABHA /d/Work (gh-pages)
+$ git add .
+
+nehabha@NEHABHA /d/Work (gh-pages)
+$ git commit -m "angular project"
+[gh-pages a921514] angular project
+ Committer: unknown <nehabha@nehabha.cybage.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 10 files changed, 620 insertions(+)
+ create mode 100644 Workshop_Project/css/style.css
+ create mode 100644 Workshop_Project/index.html
+ create mode 100644 Workshop_Project/js/script.js
+ create mode 100644 Workshop_Project/js/script_backup.js
+ create mode 100644 Workshop_Project/js/validate.js
+ create mode 100644 Workshop_Project/pages/addnewauthor.html
+ create mode 100644 Workshop_Project/pages/addnewbook.html
+ create mode 100644 Workshop_Project/pages/bookpage.html
+ create mode 100644 Workshop_Project/pages/editauthor.html
+ create mode 100644 Workshop_Project/pages/table.html
+
+nehabha@NEHABHA /d/Work (gh-pages)
+$ git push
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': nehabha@cybage.com
+Password for 'https://nehabha@cybage.com@github.com':
+Counting objects: 19, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (14/14), done.
+Writing objects: 100% (16/16), 4.38 KiB | 0 bytes/s, done.
+Total 16 (delta 5), reused 0 (delta 0)
+remote: Resolving deltas: 100% (5/5), completed with 1 local objects.
+To https://github.com/neha2294/Work.git
+   1a61f2c..a921514  gh-pages -> gh-pages
+
+nehabha@NEHABHA /d/Work (gh-pages)
+$
