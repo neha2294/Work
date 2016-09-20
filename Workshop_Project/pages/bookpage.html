@@ -43,18 +43,18 @@
 			<!--Div for Book Availability-->
 			<div class="form-group">
 				<label class="col-sm-2 control-label">Available On:</label> 
-					<div class="checkbox col-sm-1"><label class="check"><input type="checkbox" value="Amazon" ng-click="toggleSelection('Amazon')"  ng-checked="book.availableOn.indexOf('Amazon') > -1" name="availableOn[]"/>Amazon</label>
-					<label class="check"><input type="checkbox" value="eBay" ng-click="toggleSelection('eBay')" ng-checked="book.availableOn.indexOf('eBay') > -1" name="availableOn[]"/>eBay</label>
-					<label class="check"><input type="checkbox" ng-click="toggleSelection('Flipkart')" value="Flipkart" ng-checked="book.availableOn.indexOf('Flipkart') > -1" name="availableOn[]"/>Flipkart</label>
-					<label class="check"><input  type="checkbox" value="Google" ng-click="toggleSelection('Google')" ng-checked="book.availableOn.indexOf('Google') > -1" name="availableOn[]"/>Google</label>
-					</div>
+				<div class="checkbox col-sm-1"><label class="check"><input type="checkbox" value="Amazon" ng-click="toggleSelection('Amazon')"  ng-checked="book.availableOn.indexOf('Amazon') > -1" name="availableOn[]"/>Amazon</label>
+				<label class="check"><input type="checkbox" value="eBay" ng-click="toggleSelection('eBay')" ng-checked="book.availableOn.indexOf('eBay') > -1" name="availableOn[]"/>eBay</label>
+				<label class="check"><input type="checkbox" ng-click="toggleSelection('Flipkart')" value="Flipkart" ng-checked="book.availableOn.indexOf('Flipkart') > -1" name="availableOn[]"/>Flipkart</label>
+				<label class="check"><input  type="checkbox" value="Google" ng-click="toggleSelection('Google')" ng-checked="book.availableOn.indexOf('Google') > -1" name="availableOn[]"/>Google</label>
+				</div>
 			</div>
 			
 			<!--Buttons for edit , update , delete data-->
-			<button class="btn btn-primary btnForSave col-xs-12 col-sm-1" type="submit" ng-click="edit()" ng-show="editBtn"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span>Edit</button>
+			<button class="btn btn-primary btnForSave col-xs-12 col-sm-1" type="submit" ng-click="edit()" ng-show="editBtn"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Edit</button>
 			
-			<button class="btn btn-primary btnForSave col-xs-12 col-sm-1" type="submit" ng-click="update(book,availableOn)" ng-show="updateBtn"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>Update</button>	
+			<button class="btn btn-primary btnForSave col-xs-12 col-sm-1" type="submit" ng-click="update(book,availableOn)" ng-show="updateBtn"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Update</button>	
 			
-			<button  class="btn btn-primary btnForDelete col-xs-12 col-sm-1" type="submit" ng-click="deleteData(book.isbn)"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>Delete</button>
+			<button  class="btn btn-primary btnForDelete col-xs-12 col-sm-1" type="submit" ng-click="deleteData(book.isbn)"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Delete</button>
 		</div>
 	</form>

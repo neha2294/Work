@@ -7,6 +7,7 @@
 		<form class="container form-horizontal" name="myForm" ng-submit="addNew(newBook,availableOn)">
 			<div class="border">
 				<h2>Add New Book </h2>
+				
 				<!--Div for Book ISBN-->
 				<div class="form-group">
 					<label class="col-sm-2 control-label">ISBN:<sup>*</sup></label> 
@@ -54,11 +55,11 @@
 				<!--Div for Book Availability-->
 				<div class="form-group">
 					<label  class="col-sm-2 control-label">Available On:</label> 
-						<div class="checkbox col-sm-1"><label class="check"><input type="checkbox" name="Amazon" value="Amazon" ng-click="toggleSelection('Amazon')"/>Amazon</label>
-						<label class="check"><input type="checkbox" value="eBay" ng-click="toggleSelection('eBay')"/>eBay</label>
-						<label class="check"><input type="checkbox" ng-click="toggleSelection('Flipkart')" value="Flipkart"/>Flipkart</label>
-						<label class="check"><input type="checkbox" value="Google" ng-click="toggleSelection('Google')"/>
-						Google</label></div>
+					<div class="checkbox col-sm-1"><label class="check"><input type="checkbox" name="Amazon" value="Amazon" ng-click="toggleSelection('Amazon')"/>Amazon</label>
+					<label class="check"><input type="checkbox" value="eBay" ng-click="toggleSelection('eBay')"/>eBay</label>
+					<label class="check"><input type="checkbox" ng-click="toggleSelection('Flipkart')" value="Flipkart"/>Flipkart</label>
+					<label class="check"><input type="checkbox" value="Google" ng-click="toggleSelection('Google')"/>
+					Google</label></div>
 				</div>
 		
 				<!--For Save button-->

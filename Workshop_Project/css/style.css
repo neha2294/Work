@@ -3,12 +3,7 @@ body h3{
 	text-transform:uppercase;
 	font-size:40px;
 	font-family:"Times New Roman";
-	color:white;
-}
-
-body h3:hover{
-	color:#808080;
-	
+	color:#fff;
 }
 
 .container-fluid{
@@ -16,8 +11,8 @@ body h3:hover{
 }
 
 .btn{
-	margin-left:1%;
-	margin-top: 1%;
+	padding:6px 2px;
+	margin:1%;
 }
 
 header .btn-primary{
@@ -34,10 +29,6 @@ header .btn-primary{
 
 .container{
 	padding-bottom:10px;
-}
-
-.form-control{
-	
 }
 
 h2{
@@ -57,7 +48,7 @@ input{
 }
 
 sup{
-	color:red;
+	color:#ff0;
 }
 
 .btnForSave{
@@ -67,13 +58,7 @@ sup{
 	border-color:transparent;
 }
 
-.btnForReset{
-	color:#000;
-	background-color:#90c8eb;
-	border-color:transparent;
-}
-
-.btnForDelete{
+.btnForReset ,.btnForDelete{
 	color:#000;
 	background-color:#90c8eb;
 	border-color:transparent;
@@ -84,7 +69,3 @@ footer{
 	text-align:center;
 	color:#fff;
 }
-
-
-
-

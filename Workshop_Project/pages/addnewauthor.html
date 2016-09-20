@@ -22,34 +22,34 @@
 			<!--Div for Author Name-->
 			<div class="form-group">
 				<label class="col-sm-2 control-label">Name:<sup>*</sup></label> 
-					<div class="col-sm-10">
-						<input class="form-control" type="text" name="name" ng-model="newAuthor.name"  placeholder="Name" required/>
-						<span ng-show="myForm.name.$invalid && myForm.name.$dirty">
-						Invalid Name
-						</span>
-					</div>	
+				<div class="col-sm-10">
+					<input class="form-control" type="text" name="name" ng-model="newAuthor.name"  placeholder="Name" required/>
+					<span ng-show="myForm.name.$invalid && myForm.name.$dirty">
+					Invalid Name
+					</span>
+				</div>	
 			</div>	
 			
 			<!--Div for Author Email-->
 			<div class="form-group">
 				<label class="col-sm-2 control-label">Email:<sup>*</sup></label> 
-					<div class="col-sm-10">
-						<input class="form-control" type="email" name="email" ng-model="newAuthor.email" placeholder="Email" required/>
-						<span ng-show="myForm.email.$invalid && myForm.email.$dirty">
-						Invalid Email Address
-						</span>
-					</div>	
+				<div class="col-sm-10">
+					<input class="form-control" type="email" name="email" ng-model="newAuthor.email" placeholder="Email" required/>
+					<span ng-show="myForm.email.$invalid && myForm.email.$dirty">
+					Invalid Email Address
+					</span>
+				</div>	
 			</div>	
 		
 			<!--Div for Author Skills-->
 			<div class="form-group">
 				<label class="col-sm-2 control-label">Skills:<sup>*</sup></label> 
-					<div class="checkbox col-sm-1"><label><input type="checkbox" value="Java" ng-click="toggleSelection('Java')"/>Java</label>
-					<label class="check"><input type="checkbox" value=".Net" ng-click="toggleSelection('.Net')"/>.Net</label>
-					<label class="check"><input type="checkbox" value="HTML" ng-click="toggleSelection('HTML')"/>HTML</label>
-					<label class="check"><input type="checkbox" value="JavaScript" ng-click="toggleSelection('JavaScript')"/>JavaScript</label>
-					<label class="check"><input type="checkbox" value="Other" ng-model="hasChecked" ng-click="toggleSelection()"/>Other</label>
-					</div>
+				<div class="checkbox col-sm-1"><label><input type="checkbox" value="Java" ng-click="toggleSelection('Java')"/>Java</label>
+				<label class="check"><input type="checkbox" value=".Net" ng-click="toggleSelection('.Net')"/>.Net</label>
+				<label class="check"><input type="checkbox" value="HTML" ng-click="toggleSelection('HTML')"/>HTML</label>
+				<label class="check"><input type="checkbox" value="JavaScript" ng-click="toggleSelection('JavaScript')"/>JavaScript</label>
+				<label class="check"><input type="checkbox" value="Other" ng-model="hasChecked" ng-click="toggleSelection()"/>Other</label>
+				</div>
 			</div>
 
 			<!--Div for Author Department-->		
@@ -63,9 +63,9 @@
 			<!--Div for Website-->
 			<div class="form-group">
 				<label class="col-sm-2 control-label">Website:</label> 
-					<div class="col-sm-10">
+				<div class="col-sm-10">
 					<input  class="form-control" type="text" name="website" ng-model="newAuthor.website" placeholder="Website"/>
-					</div>	
+				</div>	
 			</div>
 			
 			<!--For Save button-->	
