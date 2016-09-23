@@ -47,8 +47,14 @@ input{
 	padding: 5px 1px 5px 3px;
 }
 
+thead tr{
+	background-color:#c1d6ea;
+}
+tbody tr{
+	background-color:#f9ecf0;
+}
 sup{
-	color:#ff0;
+	color:#FF0000;
 }
 
 .btnForSave{
@@ -65,6 +71,7 @@ sup{
 }
 
 footer{
+	
 	background-color:#000;
 	text-align:center;
 	color:#fff;

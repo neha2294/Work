@@ -1,3 +1,5 @@
+/*without creating factory*/
+
 var myApp = angular.module('myApp', ['ngRoute']);
 	/*method used for routing*/
 	myApp.config(function($routeProvider) {
