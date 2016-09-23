@@ -74,13 +74,15 @@ var myApp = angular.module('myApp', ['ngRoute']);
 		$scope.toggleSelection = function toggleSelection(avOn) {
 			var idx = $scope.skills.indexOf(avOn);
 
-			// is currently selected
+			
 			if (idx > -1) {
+			   // is currently selected	
 			  $scope.skills.splice(idx, 1);
 			}
 
-			// is newly selected
+			
 			else {
+				// is newly selected
 			  $scope.skills.push(avOn);
 			}
 		  };

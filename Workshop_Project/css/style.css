@@ -11,8 +11,8 @@ body h3{
 }
 
 .btn{
-	padding:6px 2px;
-	margin:1%;
+	padding:6px 1px;
+	margin:1% 1%;
 }
 
 header .btn-primary{
@@ -47,10 +47,10 @@ input{
 	padding: 5px 1px 5px 3px;
 }
 
-thead tr{
+.forHead{
 	background-color:#c1d6ea;
 }
-tbody tr{
+.forTable{
 	background-color:#f9ecf0;
 }
 sup{
