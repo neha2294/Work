@@ -1,0 +1,57 @@
+.wrapper{
+	width : 960px;
+	margin : auto;
+}
+header{
+	border : 1px solid black;
+}
+.brand {
+	margin-left : 12%;
+	border-right : 1px solid grey;
+	padding-right : 1%;
+}
+.nav-bar {
+	float : right;
+	margin-right : 12%;
+}
+.tag-line {
+	margin-left : 1%;
+}
+
+.logo {
+	display : inline;
+}
+.menu {
+	text-decoration : none;
+	padding : 10px 10px;
+}
+
+.heading {
+	text-align : center;
+	padding-top : 15%; 
+	border : 1px solid black;
+}
+
+.heading h1, h3, h6{
+	margin : 0;
+}
+.features {
+	border : 1px solid black;
+	padding : 0 12%;
+	
+}
+.features h2 {
+
+	text-align : center;
+}
+
+.feature-list {
+	display : flex;
+	
+}
+.feature-list-item {
+	margin : auto;
+}
+.feature-list-item > p {
+	font-size : 1em;
+}
