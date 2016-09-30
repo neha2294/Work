@@ -2,42 +2,45 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="css/style.css"></link>
-		<link rel="javascript" href="js/script.js"></link>
+		<link rel="stylesheet" href="css/phone-default.css"></link>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<script src="js/script.js"></script>
+		
 	</head>
-	<body >
+	<body>
 		<div class="wrapper">
 			<header>
-				<div class="logo" >
+				<div class="logo">
 					<span class="brand">Brandi</span>
 					<span class="tag-line">I am your tagline</span>
-				</div>	
+				</div>
+				<img src="images/nav.png"></img>
 				<nav class="nav-bar">
-					<a class="menu" href="">Home</a>
-					<a class="menu" href="">Features</a> 
-					<a class="menu" href="">Works</a> 
-					<a class="menu" href="">Team</a>
-					<a class="menu" href="">Contact</a>
+					<a class="menu">Home</a>
+					<a class="menu">Features</a> 
+					<a class="menu">Works</a> 
+					<a class="menu">Team</a>
+					<a class="menu">Contact</a>
 				</nav>
 			</header>
 			<section>
 				<div class="heading">
 				<h1>Meet <b>Brandi!</b></h1>
 				<h3>/creative one page template.</h3>
-				<h6>We are a team of professionals</h6>
+				
+				<div class="horizontal-line">
+					<hr class="for-horizontal">
+					<hr class="for-horizontal">
+				</div>
 				</div>
 			</section>
 				
 			
 			<section class="features">
 				<h2>Features</h2>
-				<!-- <div class="parent">
-				<div class="for-horizontal-line"></div>
-				<div class="for-horizontal-line1"></div>
-				</div> -->
 				<div class="horizontal-line">
-				<hr class="for-horizontal">
-				<hr class="for-horizontal">
-				
+					<hr class="for-horizontal">
+					<hr class="for-horizontal">
 				</div>
 				<div class="feature-list">
 					<div class="feature-list-item">
@@ -77,37 +80,37 @@
 				<h2>Works</h2>
 				<h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h4>
 				<nav class="nav-bar-for-works">
-					<a class="menu-for-works" href="">All</a>
-					<a class="menu-for-works" href="">Branding</a> 
-					<a class="menu-for-works" href="">Web</a> 
-					<a class="menu-for-works" href="">Logo Design</a>
-					<a class="menu-for-works" href="">Photography</a>
+					<a class="menu-for-works" onclick="onAll()">All</a>
+					<a class="menu-for-works" onclick="myFunction()">Branding</a> 
+					<a class="menu-for-works">Web</a> 
+					<a class="menu-for-works">Logo Design</a>
+					<a class="menu-for-works">Photography</a>
 				</nav>
 				<div class="works-for-images">
-					<div class="images">
+					<div id="img1" class="images">
 						<img src="images/car2.jpg">
 					</div>
-					<div class="images">
+					 <div id="img2" class="images">
 						<img src="images/car1.jpg">
 					</div>
-					<div class="images">
+					<div id="img3" class="images">
 						<img src="images/car3.jpg">
 					</div>
-					<div class="images">
+					<div id="img4" class="images">
 						<img src="images/car4.jpg">
 					</div>
 				</div>
 				<div class="works-for-images">
-					<div class="images">
+					<div id="img5" class="images">
 						<img src="images/car2.jpg">
 					</div>
-					<div class="images">
+					<div id="img6" class="images">
 						<img src="images/car1.jpg">
 					</div>
-					<div class="images">
+					<div id="img7" class="images">
 						<img src="images/car3.jpg">
 					</div>
-					<div class="images">
+					<div id="img8" class="images">
 						<img src="images/car4.jpg">
 					</div>
 				</div>

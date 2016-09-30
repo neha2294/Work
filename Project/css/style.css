@@ -1,5 +1,8 @@
 .brand {
 	padding-right : 1%;
+	color : #fff;
+	border-right : 1px solid grey;
+	font-size : 2em;
 }
 #creative-showcase-footer {
 	width: 21%;
@@ -68,7 +71,11 @@
 	width: 80px;
     margin: 0 25px 0 0;
 }
- } 
+.for-horizontal1 {
+	width: 25px;
+    margin-left: 5%;
+    margin-right: 10%;
+}
 .for-horizontal-line1 {
 	border-top : 1px solid grey;
 	width: 8%;
@@ -125,6 +132,12 @@
 }
 header {
 	background-color:#309c85;
+	padding : 2% 0 2% 0;
+}
+.line1 {
+	border-top : 1px solid black;
+	width: 80px;
+	display : inline;
 }
 .images {
 	display : inline;
@@ -143,7 +156,7 @@ header {
 .menu {
 	text-decoration : none;
 	padding : 10px 10px;
-	color : #000;
+	color : #fff;
 }
 .menu-for-works{
 	text-decoration : none;
@@ -151,13 +164,14 @@ header {
 	color : #000;
 }
 .menu-for-works:hover {
-	background-color : green;
+	background-color : #008000;
 	background-color:#309c85;
 	color : #FFF;
 	border-radius : 4px; 
 }
 .nav-bar {
 	float : right;
+	padding : 1.5% 0 0 0;
 }
 .nav-bar-for-works{
 	margin-left : 30%;
@@ -165,6 +179,9 @@ header {
 }	
 .tag-line {
 	margin-left : 1%;
+	color : #fff;
+	font-size : 1em;
+	padding : 2% 0 2% 0;
 }
 .works {
 	padding : 2% 0 2% 0;
