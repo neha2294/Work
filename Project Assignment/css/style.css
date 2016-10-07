@@ -11,10 +11,10 @@
 	display : inline;
 }
 #creative-showcase-footer {
-	width : 21%;
+	width : 23%;
     float : left;
     margin-top : 5%;
-    margin-left : 3.1%;
+    margin-left : 0.1%;
 }
 #creative-showcase-footer img {
 	background-color : #1ea78d;
@@ -37,7 +37,7 @@
 .explore-list a  {
 	text-decoration : none;
 	font-family : OpenSans Regular;
-	font-size : 13pt;
+	font-size : 11pt;
 	color : #ffffff;
 }
 .explore-list {
@@ -134,7 +134,7 @@
 }
 .for-copyrights {
 	float : left;
-	margin-left : 3%;
+	margin-left : 0%;
 	color : #062033;
 	font-family : OpenSans Regular;
 	font-size : 13pt;
@@ -231,8 +231,6 @@ header {
 .main-footer {
 	border-top : 3px solid #062033;
 	background-color : #1ea78d;
-	color : rgba(255,255,255,0.8);
-	font-size: 14px;
 }
 .menu {
 	text-decoration : none;
