@@ -1,0 +1,70 @@
+@media screen and (max-width: 768px)and (min-width:700px){
+
+	#creative-showcase-footer {
+		margin-top : 3%;
+		margin-left : 21%;
+		width : 13%;
+	}
+	#creative-showcase-footer p {
+		border-left : none;
+		width : 500%;
+	}
+	.for-copyrights {
+		margin-left : 36%;
+	}
+	.for-footer {
+		padding-right : 2%;
+		padding-left : 1%;
+		width : 29.33%;
+	}
+	.for-line {
+		margin-left : 30%;
+		margin-top : -3%;
+	}
+	.for-line-1 {
+		margin-left : 76%;
+		margin-top : -2.9%;
+	}
+	.features h2, .works h2, h4 {
+		margin-right : 2%;
+	}
+	.for-icon {
+		display : inline;
+		padding-left : 7px;
+	}
+	header {
+		padding : 0%;
+	}
+	.heading h1 {
+		font-size : 250%;
+		margin-left : 0%;
+	}
+	.heading h3 {
+		margin-left : 2%;
+	}
+	.images {
+		float : left;
+		width : 25%;
+	}
+	.nav-bar {
+		display : inline;
+		margin-left : 20%;
+		float : none;
+		padding : 0px 0px;
+	}
+	.nav-bar-for-works {
+		margin-left: 24%;
+	} 
+	.wrapper {
+		width : 100%;
+		padding : 0% 0%;
+		margin : 0% 0%;
+	}
+}
+
+@media screen and (max-width : 980px) and (min-width : 979px)  {
+	.nav-bar {
+		margin-left : 35%;
+		float : none;
+	}
+} 

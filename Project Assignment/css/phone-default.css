@@ -1,0 +1,147 @@
+@media only screen and (min-width:360px) and (max-width: 412px)  {
+	
+	#creative-showcase-footer {
+		width : 100%;
+		margin-left : -9px;
+		margin-top : 0px;
+	}
+	#creative-showcase-footer  p {
+		border-left : none;
+	} 
+	#for-menu {
+		display : inline;
+		margin-left : 2%;
+		position  : absolute;
+		right : 5%;
+		top : 5%;
+		background-color : #fff;
+	}
+	.for-subscribe {
+		margin-top : 2%;
+	}
+	.for-line {
+		margin-left : 2%;
+		margin-top : -3.5%;
+	}
+	.for-line-1 {
+		margin-left : 95%;
+		margin-top : -4.5%;
+	}
+	.for-copyrights {
+		margin-left : -1%;
+	}
+	.for-footer {
+		height : 100%;
+		width : 100%;
+		float : none;
+		margin-top : 2%;
+		margin-left : 0%;
+	} 
+	.features {
+		 padding : 2% 0 0 1%;
+	}
+	.feature-list {
+		display : block;
+	}
+	.feature-list-item {
+		display : flex;
+		width : 100%;
+	}
+	#for-sprite {
+		margin-top : -7%;
+		margin-left : 30%;
+	}
+	.for-professionals {
+		margin-top : -6.5%;
+		margin-left : 7%;
+	}
+	header {
+		height : 100px;
+	}
+	.heading {
+		float : left;
+		padding-bottom : 15%;
+		padding-top : 25%;
+	}
+	.images {
+		float : none;    
+		width : 100%;
+	}
+	#mynav {
+		float : left; 
+		display : none;
+		margin-left : -1%;
+		padding-top : 5%;
+	} 
+	.menu {
+		display : inline;
+		padding-left : 17px;
+		padding-top : 0px;
+		padding-bottom : 0px;
+		padding-right : 0px;
+	}
+	.menu-for-works {
+		padding : 0.5% 0.1%;
+	}
+	.menu-for-works:hover {
+		border-radius : 2px;
+	}
+	.nav-bar {
+		padding : 0px 0px;
+	}
+	.nav-bar-for-works {
+		margin-left : 0%;
+		margin-bottom : 2%;
+	}
+	.top {
+		height : 760px;
+	}	
+	.works {
+		padding : 2% 0 2% 1.5%;
+	}
+	.wrapper {
+		width : 100%;
+		padding : 0px 0px;
+		margin :0px 0px;
+	} 
+	.works-for-images {
+		display : block;
+	}
+}
+
+@media only screen and (min-width:412px) and (max-width: 500px)  {
+	.for-line-1 {
+		margin-left : 90%;
+		margin-top : -3.5%;
+	}
+	.for-professionals {
+		margin-left : 13%;
+	}
+	.for-line {
+		margin-left : 7%;
+		margin-top : -3.5%;
+	}
+	#for-sprite {
+	  margin-left : 31%;
+	}
+	.menu-for-works {
+		padding : 0.5% 1.2%;
+	}
+	.menu {
+		padding-left : 25px;
+	}
+	.top {
+		height : 710px;
+	}
+}
+
+@media only screen and (min-width:369px) and (max-width: 375px)  {
+	.for-line-1 {
+		margin-left : 91%;
+		margin-top : -4%;
+	}
+	.menu-for-works {
+		padding : 0.5% 0.5%;
+	}
+}
+
